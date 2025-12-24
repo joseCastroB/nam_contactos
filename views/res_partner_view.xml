@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <record id="view_partner_form_nam_inherit" model="ir.ui.view">
+
+        <field name="name">res.partner.form.nam.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//page[@name='sales_purchases']/group" position="inside">
+
+                <group string="Información Bancaria NAM" name="nam_banking_group" priority="3">
+
+                    <field name="nam_entidad_bancaria"/>
+                    <field name="nam_cta_cte"/>
+                    <field name="nam_cci"/>
+                    <field name="nam_cta_cte_usd"/>
+                    <field name="nam_cci_usd"/>
+                    <field name="nam_cta_detracciones"/>
+
+                </group>
+
+            </xpath>
+
+        </field>
+
+    </record>
+</odoo>
