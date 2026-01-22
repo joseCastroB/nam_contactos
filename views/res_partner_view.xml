@@ -7,6 +7,11 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
 
+            <!-- se oculta el campo Idioma-->
+            <field name="lang" position="attributes">
+               <attribute name="invisible">1</attribute>
+            </field>
+            
             <xpath expr="//page[@name='sales_purchases']/group" position="inside">
 
                 <group string="Información Bancaria del Proveedor" name="nam_banking_group" priority="3">
