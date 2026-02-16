@@ -2,6 +2,9 @@ from odoo import models, fields
 
 class ResPartner(models.Model):
     _inherit = 'res.partner'
+
+    nam_contacto = fields.Char(string='Contacto')
+
     nam_entidad_bancaria = fields.Char(string='Entidad Bancaria')
 
     nam_cta_cte = fields.Char(string='CTA. CTE. (S/.)')
